@@ -1,6 +1,8 @@
+import PostContent from "../../components/PostContent"
+
 const Post = () => {
     return (
-        <div>Posts</div>
+        <PostContent />
     )
 }
 
