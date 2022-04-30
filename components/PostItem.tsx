@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-type Post = {
+interface Post {
     title: string;
     image: string;
     excerpt: string;
