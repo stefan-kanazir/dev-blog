@@ -1,4 +1,5 @@
 import PostHeader from "./PostHeader"
+import ReactMardown from "react-markdown"
 
 const DUMMY_POST = {
     slug: "getting-started-with-nextjs",
@@ -13,7 +14,9 @@ const PostContent = () => {
         <article className="bg-gray-300 min-h-screen p-6">
             <main className="max-w-4xl mx-auto bg-gray-200 rounded-md p-10">
                 <PostHeader title={`${DUMMY_POST.title}`} image={`/images/posts/${DUMMY_POST.image}`} />
-                {DUMMY_POST.content}
+                <ReactMardown>
+                    {DUMMY_POST.content}
+                </ReactMardown>
             </main>
         </article>
     )

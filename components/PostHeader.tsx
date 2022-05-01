@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const PostHeader = ({ title, image }) => {
     return (
-        <header className="border border-b-4 border-b-teal-700 pb-10 mb-10">
+        <header className="border border-b-4 border-b-teal-700 pb-6 lg:pb-10 mb-10">
             <Image 
                 src={image}
                 alt={title}
@@ -11,7 +11,7 @@ const PostHeader = ({ title, image }) => {
                 layout="responsive"
                 className="rounded-lg"
             />
-            <h1 className="text-5xl text-bold text-teal-700 text-center mt-10">{title}</h1>
+            <h1 className="text-3xl lg:text-5xl text-bold text-teal-700 text-center mt-6 lg:mt-10">{title}</h1>
         </header>
     )
 }
