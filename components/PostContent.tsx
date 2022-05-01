@@ -10,9 +10,11 @@ const DUMMY_POST = {
 
 const PostContent = () => {
     return (
-        <article>
-            <PostHeader title={`${DUMMY_POST.title}`} image={`/images/posts/${DUMMY_POST.image}`} />
-            {DUMMY_POST.content}
+        <article className="bg-gray-300 min-h-screen p-6">
+            <main className="max-w-4xl mx-auto bg-gray-200 rounded-md p-10">
+                <PostHeader title={`${DUMMY_POST.title}`} image={`/images/posts/${DUMMY_POST.image}`} />
+                {DUMMY_POST.content}
+            </main>
         </article>
     )
 }
