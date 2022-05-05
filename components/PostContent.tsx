@@ -9,13 +9,13 @@ const DUMMY_POST = {
     content: "# This is a first post",
 }
 
-const PostContent = () => {
+const PostContent = ({post}) => {
     return (
         <article className="bg-gray-300 min-h-screen p-6">
             <main className="max-w-4xl mx-auto bg-gray-200 rounded-md p-10">
-                <PostHeader title={`${DUMMY_POST.title}`} image={`/images/posts/${DUMMY_POST.image}`} />
+                <PostHeader title={`${post.title}`} image={`/images/posts/${post.image}`} />
                 <ReactMardown>
-                    {DUMMY_POST.content}
+                    {post.content}
                 </ReactMardown>
             </main>
         </article>
