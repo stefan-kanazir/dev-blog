@@ -6,7 +6,7 @@ excerpt: "Next.js gives you the best developer experience with all the features 
 isFeatured: true
 ---
 
-NextJS is a **framework for ReactJS**.
+## NextJS is a **framework for ReactJS**
 
 Wait a second ... a "framework" for React? Isn't React itself already a framework for JavaScript?
 
@@ -29,5 +29,3 @@ In this article, we'll dive into the core concepts and features NextJS has to of
 ## File-based Routing
 
 ![Create routes via your file + folder structure](/images/posts/nextjs-file-based-routing.png)
-
-... More content ...

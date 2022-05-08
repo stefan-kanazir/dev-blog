@@ -1,5 +1,18 @@
 /* purgecss start ignore */
 @tailwind base;
+@layer base {
+    .block-content p {
+        @apply mb-2 text-lg text-gray-600;
+    }
+
+    .block-content h2 {
+        @apply mb-3 mt-10 text-3xl;
+    }
+
+    .block-content ul {
+        @apply list-disc mb-6 text-lg text-gray-600 leading-loose;
+    }
+}
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;

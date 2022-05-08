@@ -14,7 +14,7 @@ const PostContent = ({post}) => {
         <article className="bg-gray-300 min-h-screen p-6">
             <main className="max-w-4xl mx-auto bg-gray-200 rounded-md p-10">
                 <PostHeader title={`${post.title}`} image={`/images/posts/${post.image}`} />
-                <ReactMardown>
+                <ReactMardown className="block-content">
                     {post.content}
                 </ReactMardown>
             </main>
