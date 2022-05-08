@@ -28,8 +28,8 @@ const PostItem = (props) => {
                         <Image 
                             alt={title}
                             src={imagePath}
-                            width={300}
-                            height={200}
+                            width={1600}
+                            height={900}
                             layout="responsive"
                         />
                     </div>
