@@ -1,9 +1,19 @@
 import AllPosts from "../../components/AllPosts"
 import { getAllPosts } from "../../lib/posts-util"
+import Head from "next/head"
 
 const AllPostsPage = ({posts}) => {
     return (
-        <AllPosts posts={posts} />
+        <>
+            <Head>
+                <title>All Posts</title>
+                <meta 
+                    name="description"
+                    content="A list of all programming-related posts."
+                />
+            </Head>
+            <AllPosts posts={posts} />
+        </>
     )
 }
 
